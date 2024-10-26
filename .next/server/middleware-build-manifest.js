@@ -24,20 +24,15 @@ self.__BUILD_MANIFEST = {
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/footer": [
+    "/chatpanel": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/footer.js"
+      "static/chunks/pages/chatpanel.js"
     ],
     "/login": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/login.js"
-    ],
-    "/navbar": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/navbar.js"
     ]
   },
   "ampFirstPages": []

@@ -96,6 +96,15 @@ const Sidebar = () => {
                                 <span>Settings</span>
                             </div>
                         </li>
+                        <li>
+                            <Link
+                                href="/chatpanel" 
+                                className={`block text-xl rounded-lg p-2 ${router.pathname === '/chatpanel' ? 'bg-white text-black font-semibold' : 'hover:text-black hover:bg-white hover:font-semibold'}`}
+                                onClick={handleOptionClick}
+                            >
+                                Chat Panel
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </aside>

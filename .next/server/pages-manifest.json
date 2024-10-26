@@ -2,12 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
+  "/chatpanel": "pages/chatpanel.js",
   "/login": "pages/login.js",
   "/api/login": "pages/api/login.js",
   "/api/gethome": "pages/api/gethome.js",
-  "/navbar": "pages/navbar.js",
-  "/api/getnavbar": "pages/api/getnavbar.js",
-  "/footer": "pages/footer.js",
-  "/api/getfooter": "pages/api/getfooter.js"
+  "/": "pages/index.js"
 }
