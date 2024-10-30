@@ -4,6 +4,7 @@ import { BsArrowLeft } from 'react-icons/bs';
 import logindata from '../server/client/login';
 import registerdata from '../server/client/register';
 import Cookies from 'js-cookie';
+import { User } from '../../../../User-Microservice/src/user/user.schema';
 
 const Form = ({ pagetype }) => {
   const router = useRouter(); // Initialize the router
@@ -31,6 +32,10 @@ const Form = ({ pagetype }) => {
       if (pagetype === 'login') {
         response = await logindata(loginFormData);
         const data = await response.json();
+        console.log(data);
+        console.log("userId",data.user.userId);
+        sessionStorage.setItem("userId", data.user.userId);
+        sessionStorage.setItem("email",data.user.email);
 
         if (data.token) {
           Cookies.set('authToken', data.token);
@@ -46,7 +51,7 @@ const Form = ({ pagetype }) => {
       } else if (pagetype === 'register') {
         response = await registerdata(registerFormData);
         const data = await response.json();
-        console.log(data);
+       
         if (data.success) {
           setSuccess('Registration successful! Please log in.');
         } else {
